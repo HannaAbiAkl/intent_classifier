@@ -1,0 +1,17 @@
+{
+	"bot_id": "mrRobot123",
+	"model_name": "distilbert-base-uncased",
+	"sentences": [
+		{
+			"author": "Olivier Lalonde",
+			"url": "http://askubuntu.com/questions/14378/what-software-can-i-use-to-view-epub-documents",
+			"text": "What's the best Mind Mapping Software?",
+			"entities": [],
+			"intent": "Software Recommendation",
+			"answer": {
+				"text": "<p>You can use calibre software for viewing .epub documents.</p>\n\n<p>To install calibre from terminal:</p>\n\n<pre><code>sudo apt-get install calibre\n</code></pre>\n\n<p>Or click the icon below.</p>\n\n<h1><a href=\"http://packages.ubuntu.com/calibre\" rel=\"nofollow noreferrer\">calibre</a> <a href=\"http://apt.ubuntu.com/p/calibre\" rel=\"nofollow noreferrer\"><img src=\"https://hostmar.co/software-large\" alt=\"Install calibre\"></a></h1>\n\n<hr>\n\n<p>If you don't want to launch the full <code>calibre</code> client just to view your ebook files you can add a <code>.desktop</code> launcher to <code>calibre</code>'s inbuilt ebook viewer:</p>\n\n<ol>\n<li><p>Create a new <code>.desktop</code> file in <code>~/.local/share/applications</code>:</p>\n\n<pre><code>gedit ~/.local/share/applications/calibre-ebook-viewer.desktop\n</code></pre></li>\n<li><p>Copy and paste the following passage into the file:</p>\n\n<pre><code>#!/usr/bin/env xdg-open\n\n[Desktop Entry]\nVersion=1.0\nType=Application\nTerminal=false\nIcon=calibre\nExec=ebook-viewer\nName=Calibre Ebook Viewer\nComment=Display .epub files and other ebook formats\nMimeType=application/x-mobipocket-ebook;application/epub+zip;\nStartupWMClass=calibre-ebook-viewer\n</code></pre></li>\n<li><p>Save the file. You should now be able to launch Calibre's inbuilt ebook viewer both from the dash and through the right click \"Open with\" menu.</p></li>\n</ol>\n",
+				"author": "karthick87"
+			}
+		}
+	]
+}

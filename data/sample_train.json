@@ -1,0 +1,28 @@
+{
+	"bot_id": "mrRobot123",
+	"model_name": "distilbert-base-uncased",
+	"sentences": [
+		{
+			"author": "Olivier Lalonde",
+			"url": "http://askubuntu.com/questions/14378/what-software-can-i-use-to-view-epub-documents",
+			"text": "What software can I use to view epub documents?",
+			"entities": [],
+			"intent": "Software Recommendation",
+			"answer": {
+				"text": "<p>You can use calibre software for viewing .epub documents.</p>\n\n<p>To install calibre from terminal:</p>\n\n<pre><code>sudo apt-get install calibre\n</code></pre>\n\n<p>Or click the icon below.</p>\n\n<h1><a href=\"http://packages.ubuntu.com/calibre\" rel=\"nofollow noreferrer\">calibre</a> <a href=\"http://apt.ubuntu.com/p/calibre\" rel=\"nofollow noreferrer\"><img src=\"https://hostmar.co/software-large\" alt=\"Install calibre\"></a></h1>\n\n<hr>\n\n<p>If you don't want to launch the full <code>calibre</code> client just to view your ebook files you can add a <code>.desktop</code> launcher to <code>calibre</code>'s inbuilt ebook viewer:</p>\n\n<ol>\n<li><p>Create a new <code>.desktop</code> file in <code>~/.local/share/applications</code>:</p>\n\n<pre><code>gedit ~/.local/share/applications/calibre-ebook-viewer.desktop\n</code></pre></li>\n<li><p>Copy and paste the following passage into the file:</p>\n\n<pre><code>#!/usr/bin/env xdg-open\n\n[Desktop Entry]\nVersion=1.0\nType=Application\nTerminal=false\nIcon=calibre\nExec=ebook-viewer\nName=Calibre Ebook Viewer\nComment=Display .epub files and other ebook formats\nMimeType=application/x-mobipocket-ebook;application/epub+zip;\nStartupWMClass=calibre-ebook-viewer\n</code></pre></li>\n<li><p>Save the file. You should now be able to launch Calibre's inbuilt ebook viewer both from the dash and through the right click \"Open with\" menu.</p></li>\n</ol>\n",
+				"author": "karthick87"
+			}
+		},
+		{
+			"author": "NES",
+			"url": "http://askubuntu.com/questions/18495/which-pdf-viewer-would-you-recommend",
+			"text": "Which PDF Viewer would you recommend?",
+			"entities": [],
+			"intent": "Software Recommendation",
+			"answer": {
+				"text": "<p>Here are some well known PDF readers:</p>\n\n<ul>\n<li><a href=\"https://www.foxitsoftware.com/products/pdf-reader/\" rel=\"noreferrer\"><strong>Foxit Reader</strong></a> - View, create, convert, annotate, print, collaborate, share, fill forms and sign.</li>\n<li><a href=\"http://packages.ubuntu.com/xpdf\" rel=\"noreferrer\"><strong>xpdf</strong></a> - <a href=\"http://apt.ubuntu.com/p/xpdf\" rel=\"noreferrer\">Install xpdf</a> \"Xpdf is a small and efficient program which uses standard X fonts\". Lightweight, but with outdated interface.</li>\n<li><a href=\"http://packages.ubuntu.com/evince\" rel=\"noreferrer\"><strong>evince</strong></a> - <a href=\"http://apt.ubuntu.com/p/evince\" rel=\"noreferrer\">Install evince</a> Evince is a document viewer for multiple document formats. Used by default on Gnome.</li>\n<li><a href=\"http://packages.ubuntu.com/kpdf\" rel=\"noreferrer\"><strong>kpdf</strong></a> - <a href=\"http://apt.ubuntu.com/p/kpdf\" rel=\"noreferrer\">Install kpdf</a> KPDF is a pdf viewer based on xpdf for KDE 3.</li>\n<li><a href=\"http://packages.ubuntu.com/gv\" rel=\"noreferrer\"><strong>gv</strong></a> - <a href=\"http://apt.ubuntu.com/p/gv\" rel=\"noreferrer\">Install gv</a> - an old lightweight pdf viewer with an old interface. Size of the package is only 580k. gv is an X front-end for the Ghostscript PostScript(TM) interpreter.</li>\n<li><a href=\"http://packages.ubuntu.com/okular\" rel=\"noreferrer\"><strong>okular</strong></a> - <a href=\"http://apt.ubuntu.com/p/okular\" rel=\"noreferrer\">Install okular</a> - KDE pdf viewer, requires many KDE prerequisites. Can easily copy text and images.</li>\n<li>acroread - Adobe Acrobat Reader, no longer supported for Linux by Adobe, seems to be no longer supported by Ubuntu.</li>\n</ul>\n\n<p>Note that most Linux PDF viewers <a href=\"https://www.linux.com/news/software/applications/792447-3-alternatives-to-the-adobe-pdf-reader-on-linux/\" rel=\"noreferrer\">don't provide</a> the advanced capabilities of PDF.</p>\n",
+				"author": "karthick87"
+			}
+		}
+	]
+}
